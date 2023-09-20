@@ -600,41 +600,6 @@
                     }
                 }
 
-                if (option == 'TRAlign') {
-
-                    const rectwidth = rectangleCoordinates[1][0] - rectangleCoordinates[0][0];
-                    const rectheight = rectangleCoordinates[3][1] - rectangleCoordinates[0][1];
-                    const cellWidth1 = value
-                    const cellHeight1 = value
-                    const numCols1 = (rectwidth / value);
-                    const numRows1 = (rectheight / value);
-                    const cellWidth_temp = (rectangleCoordinates[1][1] - rectangleCoordinates[0][1]) / numCols1;
-                    const cellHeight_temp = (rectangleCoordinates[3][0] - rectangleCoordinates[0][0]) / numRows1;
-
-                    // const cellTopLeft = [
-                    //     rectangleCoordinates[2][0] + cellWidth_temp * (2-1) - cellWidth1 * (2),
-                    //     rectangleCoordinates[2][1] - cellHeight1 * (2-1) + cellHeight_temp * (2)
-                    // ];
-                    // const cellTopRight = [
-                    //     rectangleCoordinates[2][0] - cellWidth_temp * (j-1) - cellWidth1 * (i-1),
-                    //     rectangleCoordinates[2][1] - cellHeight1 * (j-1) - cellHeight_temp * (i-1)
-                    // ];
-                    // const cellBottomRight = [
-                    //     rectangleCoordinates[2][0] - cellWidth_temp * (j) - cellWidth1 * (i-1),
-                    //     rectangleCoordinates[2][1] - cellHeight1 * (j) - cellHeight_temp * (i-1)
-                    // ];
-                    // const cellBottomLeft = [
-                    //     rectangleCoordinates[2][0] - cellWidth_temp * (j) - cellWidth1 * (i),
-                    //     rectangleCoordinates[2][1] - cellHeight1 * (j) - cellHeight_temp * (i)
-                    // ];
-
-                    const pointFeature = new ol.Feature({
-                            geometry: new ol.geom.Point(cellTopLeft),
-                        });
-
-                    gridSource.addFeature(pointFeature);
-
-                }
             }
         };
 
